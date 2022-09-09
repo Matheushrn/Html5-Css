@@ -1,0 +1,16 @@
+body{
+    background-color: darkblue;
+}
+header{
+    padding:20px;
+    margin: 0px;
+    background-color: white;
+    border-radius:20px;
+    text-align: center;
+}
+main{
+    background-color: white;
+    padding:20px;
+    margin:20px;
+    border-radius:30px;
+}

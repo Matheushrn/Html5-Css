@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinamicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+    <p>A ordem sempre deve ser obdecida da menor em primeiro ate a maior</p>
+    <h1>Reproduzindo audios</h1>
+    <p>Como reproduzir audios em HTML5</p>
+    <audio src="midia/Violence.mp3"controls autoplay></audio>
+    <p>Formatos de audio aceitos mp3--WAV---OGG---
+        sempre deixar o WAV como ultima opção por ser muito pesado
+    </p>
+    <p>outro jeito de carregar o audio é fazendo esse codigo</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/Violence.mp3" type="audio/mpeg">
+        <source src="midia/Violence.mp3" type="audio/ogg">
+        <source src="midia/Violence.mp3" type="audio/wav">
+    </audio>
+        <p>infelizmente seu navegador não consegue reproduzir o audio <a href="https://www.youtube.com/watch?v=Zm7e2XMowZc" target="_blank">clique aqui para abrir</a> isso caso o audio não reproduza</p>
+        <h2>parametros</h2>
+        <ul>
+            <li><abbr title="só considera que o site terminou de carregar apos o audio acabar">auto</abbr></li>
+            <li><abbr title="carrega algumas informaçoes apenas quando o usuario da play">metadata</abbr></li>
+            <li><abbr title="toca o audio assim que o site é aberto sem precisar do usuario dar o play">autoplay</abbr></li>
+            <li><abbr title="reinicia o audio">loop</abbr></li>
+            <li><abbr title="carrega apenas quando o usuario da play">none</abbr></li>
+        </ul>
+        <h1>Videos com HTML5</h1>
+        <p>formatos suportados são mp4/m4v---webm---ogg</p>
+        assim como nos audios e imagens é bom sempre ter varios formatos para caso um nao funcione outro pode funcionar
+        <h1>Inserindo videos hospedados localmente</h1>
+        <p>este video está hospedado no meu próprio servidor</p>
+        <video controls>
+            <source src="midia/jujutsu.mp4" type="video/mp4">
+            <source src="midia/Jujutsu.webm" type="video/webm">
+        </video>
+            <p>se o navegador não tiver compatibilidade com o video <a href="https://www.youtube.com/watch?v=GwaRztMaoY0"target="_blank">clique aqui</a> para assistir o video</p>
+        <p>para colocar uma thumbnail no video use o parametro "poster" do lado da tag video</p>
+        <p>sempre avisar ao cliente o quanto de bandalarga ele pode gastar por estar hospedando tantos videos</p>
+        <h1>Hospedagem de videos externos</h1>
+        <p>No youtube na opção "compartilhar-incorporar" ele te da um codigo html completo assim consome dados do site que o video estiver hospedado e não do seu</p>
+        <iframe width="645" height="375" src="https://www.youtube.com/embed/GwaRztMaoY0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>vimeo é melhor para videos que o cliente não quer que qualquer um veja caso contrario pode usar youtube tranquilo</p>
+</body>
+</html>
