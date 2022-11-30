@@ -5,16 +5,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>blink-182</title>
     <style>
+        h1{
+            text-align: center;
+        }
         body{
-            background-image: url(imagem/smiley\ face.png);
-            background-repeat: no-repeat;
-           
+            background-image: linear-gradient(to right, #A0E7E5,white,#FFAEBC);
+        }
+        .container{
+            width:350px;
+            height:560px;
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            background-color: white;
+            border:1px solid black;
+            border-radius: 20px;
+        }
+        img{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 10px;
+            margin:auto;
+        }
+        h2{
+            text-align: center;
+            text-decoration: underline;
+        }
+        li{
+            list-style:none;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-
+    <h1>Teste usando listas</h1>
+    <div class="container">
+        <img src="imagem/Blink-182_álbum.jpg" alt="">
+        <h2>blink-182</h2>
+        <ul>
+            <li>Feeling This</li>
+            <li>Obvious</li>
+            <li>I Miss You</li>
+            <li>Violence</li>
+            <li>Stockholm Syndrome</li>
+            <li>Down</li>
+            <li>The Fallen Interlude</li>
+            <li>Go</li>
+            <li>Asthenia</li>
+            <li>Always</li>
+            <li>Easy Target</li>
+            <li>All of This</li>
+            <li>Here's Your Letter</li>
+            <li>I'm Lost Without You</li>
+        </ul>
+    </div>
 </body>
 </html>
