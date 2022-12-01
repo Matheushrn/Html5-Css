@@ -1,0 +1,29 @@
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main{
+    border:2px solid black;
+}
+
+main::after{
+    content: 'esse site foi um exercicio do curso de HTML e Css do CursoEmVideo';
+    text-decoration: underline;
+}
+
+.phone{
+    display: none;
+}
+.tab{
+    display: none;
+}
+.print{
+    display: block;
+}
+.pc{
+    display: none;
+}
+.tv{
+    display: none;
+}
