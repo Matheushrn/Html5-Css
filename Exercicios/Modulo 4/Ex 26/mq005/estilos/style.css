@@ -13,24 +13,22 @@ body,html{
 header{
     background-color: lightcyan;
 }
+.material-symbols-outlined{
+    display: block;
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    padding:10px;
+    cursor: pointer;
+}
+.material-symbols-outlined:hover{
+    background-color: lightskyblue;
+    color: whitesmoke;
+}
 
 header > h1{
     text-align: center;
     padding:10px;
-}
-
-span {
-    background-color: black;
-    width:99vw;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    cursor: pointer;
-}
-
-span:hover{
-    background-color:whitesmoke;
-    color: black;
 }
 
 menu{
